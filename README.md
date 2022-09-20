@@ -1,4 +1,5 @@
 # Jertrude Project
+![Jertrude](https://i.imgur.com/2r042bK.gif)
 
 The jertrude project is a school project that allows you to play some music with a Arduino card.
 
