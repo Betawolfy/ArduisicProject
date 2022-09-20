@@ -4,9 +4,9 @@
   Keyboard
   Plays a pitch that changes based on a changing
   input circuit:
-  * 3 pushbuttons from +5V to analog in 0 through
+  * 5 pushbuttons from +5V to analog in 0 through
   3
-  * 3 10K resistors from analog in 0 through 3 to
+  * 5 10K resistors from analog in 0 through 3 to
   ground
   * 8-ohm speaker on digital pin 8
 */
