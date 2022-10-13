@@ -27,21 +27,21 @@ void loop()
 {
   // if button press on A0 is detected
   if (digitalRead(A0) == HIGH) {
-    tone(8, 1046.5, 100); // play tone 57 (A4 = 440 Hz)
+    tone(8, 32.70, 100); // play tone 57 (A4 = 440 Hz)
   }
   // if button press on A1 is detected
   if (digitalRead(A1) == HIGH) {
-    tone(8, 1174.7, 100); // play tone 59 (B4 = 494 Hz)
+    tone(8, 36.71, 100); // play tone 59 (B4 = 494 Hz)
   }
   // if button press on A0 is detected
   if (digitalRead(A2) == HIGH) {
-    tone(8, 1318.5, 100); // play tone 60 (C5 = 523 Hz)
+    tone(8, 41.20, 100); // play tone 60 (C5 = 523 Hz)
   }
   if (digitalRead(A3) == HIGH) {
-    tone(8, 1568.0, 100); // play tone 62 (D5 = 587 Hz)
+    tone(8, 49, 100); // play tone 62 (D5 = 587 Hz)
   }
   if (digitalRead(A4) == HIGH) {
-    tone(8, 1760.0, 100); // play tone 63 (D#5 = 622 Hz)
+    tone(8, 55, 100); // play tone 63 (D#5 = 622 Hz)
   }
   delay(10); // Delay a little bit to improve simulation performance
 }
