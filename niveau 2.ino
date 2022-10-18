@@ -1,10 +1,31 @@
+/* MISSION:
+ *  - Jouer un son avec le Grove - buzzer quand on appuie sur un bouton pressoir.
+ *  - Pouvoir Jouer plusieurs note (octave) avec plusieurs boutons pressoir. 
+ *  - Changer la gamme de note avec la pression d'un bouton pressoir séparé.
+ *  --------------------------------
+ *  Vincent Marais | 13.40
+ *  github: https://github.com/Betawolfy
+ *  --------------------------------
+ *  NOTES TECHNIQUES: 
+ *  le Grove - Buzzer doit être connecté sur le port D8.
+ *  Les boutons pressoirs qui jouent des notes doivent être connectés sur A0, A1, A2, A3 et A4.
+ *  Le bouton pressoir (pour changer de gamme (BCG) doit être branché sur D2.
+ */
+
+
+// Pour garentir le fonctionnement du programme, ces 3 variables sont nessesaires:
+
+// Cette variable stocke l'état actuelle du bouton BCG.
 int EtatBoutonActuel = 0;
 
+//Cette variable stocke l'état précédent du bouton.
 int EtatBoutonPrecedent = 0;
 
+// cette variable stocke un compteur dont le fonctionnement sera expliqué plus bas.
 int Compteur = 0;
 
-void setup()
+
+void setup() // Procédure d'initialisation.
 {
   Serial.begin(9600);
   pinMode(2, INPUT);
@@ -12,7 +33,7 @@ void setup()
   pinMode(A2, INPUT);
 }
 
-void loop()
+void loop() // Boucle infini
 {
   EtatBoutonActuel = digitalRead(2);
   // on définit la variable "étatboutonactuel" sur la
