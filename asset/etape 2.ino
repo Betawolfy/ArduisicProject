@@ -10,6 +10,7 @@ void setup()
 {
   pinMode(2, INPUT);
   pinMode(8, OUTPUT);
+  pinMode(A2, INPUT);
 }
 
 void loop()
@@ -26,15 +27,21 @@ void loop()
     delay(5); // Wait for 5 millisecond(s)
     // délai pour s'assurer un bon fonctionnement du
     // programme
-  }
+  };
   EtatBoutonPrecedent = EtatBoutonActuel;
   // programmation de la désactivation du bouton
   if (Compteur % 2 == 0) {
     // on vérifie le reste de la division
-    digitalWrite(8, LOW);
+  if (digitalRead(A2) == HIGH) {
+    tone(8, 329.6, 100); // play tone 60 (C5 = 523 Hz)
+    Serial.println("Arduisic - playing tone 60");
+  }
   } else {
     // si l'on appuie pas sur le bouton la lampe reste
     // allumée.
-    digitalWrite(8, HIGH);
-  }
+  if (digitalRead(A2) == HIGH) {
+    tone(8, 440, 100); // play tone 60 (C5 = 523 Hz)
+    Serial.println("Arduisic - playing tone 60");
+  };
+};
 }
