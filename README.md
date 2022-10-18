@@ -3,8 +3,11 @@
 
 The Arduisic project is a school project that allows you to play some music with a Arduino card.
 
-## Installation
-There is no need to install this for the moment.
+![trans](https://i.imgur.com/b8cBG07.gif) ![trans](https://i.imgur.com/b8cBG07.gif) ![trans](https://i.imgur.com/b8cBG07.gif) 
+
+## Level 1: The basic
+
+The basic code is in [this file](https://github.com/Betawolfy/ArduisicProject/blob/main/niveau%201.ino). The basic is simple: if i push a button, the buzzer plays a sound.
 
 ## Contributing
 Contribution are closed for the moment. It will open when the school project will be finish.
